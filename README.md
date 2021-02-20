@@ -1,4 +1,3 @@
-# DLuomane.github.io
 <html lang="en">
 <head>
   <title>Bootstrap 4 Website Example</title>
