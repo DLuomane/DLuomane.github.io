@@ -1,5 +1,4 @@
 # DLuomane.github.io
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bootstrap 4 Website Example</title>
