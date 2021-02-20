@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Website Example</title>
+  <title>Urheilu</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -8,82 +9,86 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
+      body {
+          background-color: gainsboro;
+      }
+      h1 {
+          color: black;
+          text-align: center;
+          text-transform: uppercase;
+      }
+      h2 {
+          text-align: center;
+      }
+      p {
+          text-align: center;
+      }
+      .kuva {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+          }
   </style>
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>My First Bootstrap 4 Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="http://cs.uef.fi/~henrhyva/etusivu.html#">UUTISET</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="http://cs.uef.fi/~henrhyva/etusivu.html#">Etusivu</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="http://cs.uef.fi/~henrhyva/kotimaa.html#">Kotimaa</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>    
+        <a class="nav-link" href="http://cs.uef.fi/~henrhyva/urheilu.html#">Urheilu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://cs.uef.fi/~henrhyva/yhteystiedot.html#">Yhteystiedot</a>
+      </li>
+      <li>
+      <a href="https://fi.wikipedia.org/wiki/Ruotsi"><img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg" width="60" height="40" alt=""></a>
+      </li>
     </ul>
   </div>  
 </nav>
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
-    </div>
-    <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-  </div>
-</div>
+<h1>Ota yhteyttä!</h1>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
+<div class="container-fluid" style="height: 70vh">
+    <div class="row">
+        <div class="col-sm-8" style="background-color: lavender">
+            <h2>UUTISET</h2><br>
+            <p>Keskuskatu 2</p>
+            <p>00100 Helsinki</p><br>
+            <p>Puh. 012345678</p>
+            <p>uutiset@uutiset.fi</p><br>
+            <img src="https://cdn.pixabay.com/photo/2012/11/08/07/20/protection-65340_1280.jpg" alt="" style="width: 80%; height: 40%;" class="kuva">
+        </div>
+        <div class="col-sm-4" style="background-color: thistle">
+            <form>
+                <div class="form-group">
+                    <label for="nimi">Nimi:</label>
+                    <input type="text" id="nimi" name="nimi" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="sposti">Sähköposti:</label>
+                    <input type="email" id="sposti" name="sposti" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="viesti">Viesti:</label>
+                    <input type="text" id="viesti" name="viesti" class="form-control">
+                </div>
+                <input type="submit" value="Lähetä" class="btn btn-primary"><br><br>
+              </form>
+        </div>
+    </div>
 </div>
 
 </body>
